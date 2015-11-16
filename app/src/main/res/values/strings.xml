@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YaoBiDa</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">首页</string>
+    <string name="my">我的</string>
+    <string name="shop">购物车</string>
+    <string name="consult">咨询</string>
+    <string name="consult2">资质名称:国家执行药师\n认证机构:国家食品药品监督管理局\n药师资质编号:016234\n资质查询网址:http://t.im/yaoshizz</string>
+</resources>

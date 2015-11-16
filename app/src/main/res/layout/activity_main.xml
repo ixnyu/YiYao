@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/tab_style"
+                android:drawableTop="@drawable/activity_home"
+                android:text="@string/home"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_consult"
+                style="@style/tab_style"
+                android:drawableTop="@drawable/activity_consult"
+                android:text="@string/consult"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_shop"
+                style="@style/tab_style"
+                android:drawableTop="@drawable/activity_shop"
+                android:text="@string/shop"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                style="@style/tab_style"
+                android:drawableTop="@drawable/activity_my"
+                android:text="@string/my"
+                />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

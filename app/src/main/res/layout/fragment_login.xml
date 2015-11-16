@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/colorgraybg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/edt_operator_name"
+            android:hint="请输入药名,品牌或功能主治"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/syncOperatorImg"
+            android:src="@mipmap/search"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

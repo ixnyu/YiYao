@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/fragment_my_item3_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/my_1"/>
+
+    <TextView
+        android:id="@+id/fragment_my_item3_tv"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/fragment_my_item3_iv"
+        android:text="当前订单"/>
+
+    <ImageView
+        android:id="@+id/fragment_my_item1_iv2"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/my_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

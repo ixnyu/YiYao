@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+    >
+<ImageView
+    android:layout_marginStart="10dp"
+    android:layout_gravity="center"
+    android:id="@+id/fragment_home_iv_lv_item"
+    tools:background="@mipmap/c1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/fragment_home_titletv_lv_item"
+            android:textSize="18sp"
+            tools:text="第一行"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/fragment_home_contenttv_lv_item"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="第二行"
+            />
+    </LinearLayout>
+<ImageView
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/fragment_home_city_arrow"/>
+</LinearLayout>

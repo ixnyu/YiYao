@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/fragment_druglist_top_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3da3fc"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fragment_druglist_back_btn"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="感冒发烧"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/fragment_druglist_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fragment_druglist_search_btn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_druglist_sort_linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/fragment_druglist_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/fragment_druglist_parent_tv"
+                android:src="@mipmap/fragment_druglist_cold"
+                />
+
+            <TextView
+                android:id="@+id/fragment_druglist_parent_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="感冒发烧"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_druglist_parent_tv"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/fragment_druglist_parent_tv"
+                android:src="@mipmap/fragment_druglist_pullarrow"/>
+        </RelativeLayout>
+        <!--<Button-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:id="@+id/fragment_druglist_parentsort_btn"-->
+        <!--android:textColor="@android:color/darker_gray"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:drawableLeft="@mipmap/fragment_druglist_cold"-->
+        <!--android:drawableRight="@mipmap/fragment_druglist_pullarrow"-->
+        <!--android:text="全部分类"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EFEFEF"/>
+
+        <RelativeLayout
+            android:id="@+id/fragment_druglist_child"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/fragment_druglist_child_tv"
+                android:src="@mipmap/fragment_druglist_sort"
+                />
+
+            <TextView
+                android:id="@+id/fragment_druglist_child_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="感冒发烧"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_druglist_child_tv"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/fragment_druglist_child_tv"
+                android:src="@mipmap/fragment_druglist_pullarrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#eeeeee"
+        />
+
+    <ListView
+        android:id="@+id/fragment_druglist_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#eaeaea"
+        android:dividerHeight="3dp">
+
+    </ListView>
+</LinearLayout>
